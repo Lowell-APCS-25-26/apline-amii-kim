@@ -1,8 +1,12 @@
 package org.APCSLowell;
 
 public class APLine {
-    int a, b, c;
-    public APLine(int a, int b, int c) {}
+    private int a, b, c;
+    public APLine(int a1, int b1, int c1) {
+        a = a1;
+        b= b1;
+        c = c1;
+    }
     public boolean isOnLine(int x, int y) {
         return a * x + b * y + c == 0;
     }
